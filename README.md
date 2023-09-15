@@ -40,26 +40,54 @@ Lembre-se de que você pode instalar todas essas dependências e devDependencies
 ### A Rest API tem os seguintes endpoints:
 
 * Lista de todas as contas cadastradas, incluindo todas as suas transações: __router.get('/contas/:senha_banco')__ . Para testar, você precisará de um programa que teste as requisições. No exemplo, usaremos o Insomnia. Digite a URL http://localhost:3000/contas/Cubos123Bank como uma rota HTTP GET. Se a senha estiver incorreta ou a conta informada não existir, uma mensagem de erro será retornada.
+**A requisição deverá ser feita na URL.** 
 ![Screenshot 2023-09-15 at 16 44 37](https://github.com/DevFelipreis/banco-digital/assets/134344282/72cfbebb-48e7-47d6-a677-344d22ccb463)
 
 * Saldo de uma conta cadastrada: __router.get('/contas/saldo')__ . Para testar, você precisará de um programa que teste as requisições. No exemplo, usaremos o Insomnia. Digite a URL http://localhost:3000/contas/saldo?numero_conta=1&senha=1234 como uma rota HTTP GET. Se a senha estiver incorreta ou a conta informada não existir, uma mensagem de erro será retornada.
+  **A requisição deverá ser feita na URL.** 
 ![Screenshot 2023-09-15 at 16 49 01](https://github.com/DevFelipreis/banco-digital/assets/134344282/ed88a027-d808-43db-99ba-3dff5fbafbad)
 
 * Extrato de uma conta cadastrada: __router.get('/contas/extrato')__ . Para testar, você precisará de um programa que teste as requisições. No exemplo, usaremos o Insomnia. Digite a URL http://localhost:3000/contas/extrato?numero_conta=1&senha=1234 como uma rota HTTP GET. Se a senha estiver incorreta ou a conta informada não existir, uma mensagem de erro será retornada.
+  **A requisição deverá ser feita na URL.** 
 ![Screenshot 2023-09-15 at 16 50 39](https://github.com/DevFelipreis/banco-digital/assets/134344282/13586135-617a-4ae8-88c4-fc3dbcf56872)
 
-* Criar uma conta bancária: __router.post('/contas/:senha_banco')__ . Para testar, você precisará de um programa que teste as requisições. No exemplo, usaremos o Insomnia. Digite a URL http://localhost:3000/contas/Cubos123Bank como uma rota HTTP GET. Se a senha estiver incorreta ou dados copo CPF e e-mail já estiverem sidos cadastrados em outra conta, uma mensagem de erro será retornada.
+* Criar uma conta bancária: __router.post('/contas/:senha_banco')__ . Para testar, você precisará de um programa que teste as requisições. No exemplo, usaremos o Insomnia. Digite a URL http://localhost:3000/contas/Cubos123Bank como uma rota HTTP POST. Se a senha estiver incorreta ou se os dados do CPF e do e-mail já estiverem sido cadastrados em outra conta, uma mensagem de erro será retornada.
+  **Os dados da requisição deverão ser enviados no corpo (body).**
 ![Screenshot 2023-09-15 at 16 53 38](https://github.com/DevFelipreis/banco-digital/assets/134344282/6810e8e7-a62b-430c-9e83-0cdb5ee06e4c)
 
+* Atualizar uma conta bancária: __router.put('/contas/:numeroConta/usuario')__ . Para testar, você precisará de um programa que teste as requisições. No exemplo, usaremos o Insomnia. Digite a URL http://localhost:3000/contas/1/usuario como uma rota HTTP PUT. Se a senha estiver incorreta ou se os dados do CPF e do e-mail já estiverem sido cadastrados em outra conta, uma mensagem de erro será retornada.
+    **Os dados da requisição deverão ser enviados no corpo (body).**
+![Screenshot 2023-09-15 at 16 57 20](https://github.com/DevFelipreis/banco-digital/assets/134344282/cd5b2edc-f391-4d2d-88b0-cbea08c8f0a1)
 
+* Excluir de uma conta cadastrada: __router.delete('/contas/:numeroConta')__ . Para testar, você precisará de um programa que teste as requisições. No exemplo, usaremos o Insomnia. Digite a URL http://localhost:3000/contas/1 como uma rota HTTP DELETE. Se a senha estiver incorreta ou a conta informada não existir, uma mensagem de erro será retornada.
+  **A requisição deverá ser feita na URL.** 
+![Screenshot 2023-09-15 at 16 59 04](https://github.com/DevFelipreis/banco-digital/assets/134344282/92370b8e-807c-44f4-b328-bf20b055cf2c)
 
+* Depositar em uma conta cadastrada: __router.post('/transacoes/depositar')__ . Para testar, você precisará de um programa que teste as requisições. No exemplo, usaremos o Insomnia. Digite a URL http://localhost:3000/transacoes/depositar como uma rota HTTP POST. Se a conta informada não existir, uma mensagem de erro será retornada.
+  **Os dados da requisição deverão ser enviados no corpo (body).**
+![Screenshot 2023-09-15 at 17 01 05](https://github.com/DevFelipreis/banco-digital/assets/134344282/4d21556a-89e7-4202-927f-46a62c26ac0b)
 
+* Sacar de uma conta cadastrada: __router.post('/transacoes/sacar')__ . Para testar, você precisará de um programa que teste as requisições. No exemplo, usaremos o Insomnia. Digite a URL http://localhost:3000/transacoes/sacar como uma rota HTTP POST. Se a senha estiver incorreta ou a conta informada não existir, uma mensagem de erro será retornada.
+  **Os dados da requisição deverão ser enviados no corpo (body).**
+![Screenshot 2023-09-15 at 17 02 33](https://github.com/DevFelipreis/banco-digital/assets/134344282/f38a40b9-45e3-49a5-be4b-6328c99287db)
 
+* Transferir de uma conta cadastrada para outra: __router.post('/transacoes/transferir')__ . Para testar, você precisará de um programa que teste as requisições. No exemplo, usaremos o Insomnia. Digite a URL http://localhost:3000/transacoes/transferir como uma rota HTTP POST. Se a senha estiver incorreta, ou a conta de origem ou destino informada não existir e o saldo for menor que o valor da transferência, uma mensagem de erro será retornada.
+  **Os dados da requisição deverão ser enviados no corpo (body).**
+![Screenshot 2023-09-15 at 17 04 45](https://github.com/DevFelipreis/banco-digital/assets/134344282/727460b3-bda5-431c-a419-40812ade784b)
 
+**Licença:** Este projeto está sob uma licença de código aberto que permite a colaboração de qualquer pessoa interessada em contribuir para melhorias e desenvolvimento. Todos são bem-vindos a fazer contribuições para o projeto.
 
+**Agradecimentos:** Gostaríamos de expressar nossa gratidão à instituição de Ensino Cubos Academy, bem como a todos os nossos colegas e instrutores, por seu apoio e contribuições para este projeto. Seu envolvimento foi fundamental para o seu sucesso. Agradecemos sinceramente a todos vocês.
 
+**Links Úteis:**
+- [Baixar o Visual Studio Code (VSCode)](https://code.visualstudio.com/)
+- [Baixar o Insomnia](https://insomnia.rest/)
 
+**Atualizações Futuras:** Este projeto encontra-se na sua versão Alfa, indicando que ainda está em desenvolvimento ativo. Estamos comprometidos em continuar aprimorando e atualizando este projeto para oferecer novos recursos e melhorias no futuro. Agradecemos antecipadamente pelo seu interesse e contribuições à medida que continuamos a evoluir este projeto.
 
+**Contato:**
+- [LinkedIn](https://www.linkedin.com/in/devlfreis/)
+- E-mail: [lfreis.contato@gmail.com](mailto:lfreis.contato@gmail.com)
 
 
 
