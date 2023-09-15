@@ -1,5 +1,5 @@
 # Rest Api - Banco Digital -  v1.1.2
-**Melhorias em relação à versão 1.1.2: Corrigido o 'Bug do delete' que causava um erro ao tentar excluir uma conta recém-criada.**
+**Melhorias em relação à versão 1.1.1: Corrigido o 'Bug do delete' que causava um erro ao tentar excluir uma conta recém-criada.**
 
 Este projeto é um repositório para uma API de Banco Digital. Essa API integra-se com o servidor do Banco Digital para permitir o acesso e manipulação de dados bancários de forma segura e eficiente.
 
@@ -25,15 +25,48 @@ Abra o terminal ou prompt de comando, navegue até o diretório do seu projeto e
 Lembre-se de que você pode instalar todas essas dependências e devDependencies em seu projeto usando o comando: ```npm install```
 
 ## Preparar o projeto:
-**Clone o repositório**: Abra o terminal e use o comando: ```git clone "chave SSh```
+**Clone o repositório**: Abra o terminal e use o comando: ```git clone "chave SSh"```
 
 ![Screenshot 2023-09-15 at 16 12 59](https://github.com/DevFelipreis/banco-digital/assets/134344282/60c1f4e4-29e9-4832-abb8-3c5bb9b9e5f6)
-
 ![Screenshot 2023-09-15 at 16 13 39](https://github.com/DevFelipreis/banco-digital/assets/134344282/2c2865d6-45a5-4dd1-b2c4-6c494267046d)
 
 **Instale o npm**: ```npm install```. O npm (Node Package Manager) é o gerenciador de pacotes padrão para a plataforma Node.js. Ele é uma ferramenta que permite a instalação, gerenciamento e distribuição de pacotes de software escritos em JavaScript. O npm é uma parte essencial do ecossistema Node.js.
 
 **Lembrando que é necessário especificar o caminho correto para a instalação.**
 ```cd /home/<seu_nome_de_usuário>/Documentos/MeuProjeto```
+
+## Como funciona:
+
+### A Rest API tem os seguintes endpoints:
+
+* Lista de todas as contas cadastradas, incluindo todas as suas transações: __router.get('/contas/:senha_banco')__ . Para testar, você precisará de um programa que teste as requisições. No exemplo, usaremos o Insomnia. Digite a URL http://localhost:3000/contas/Cubos123Bank como uma rota HTTP GET. Se a senha estiver incorreta ou a conta informada não existir, uma mensagem de erro será retornada.
+![Screenshot 2023-09-15 at 16 44 37](https://github.com/DevFelipreis/banco-digital/assets/134344282/72cfbebb-48e7-47d6-a677-344d22ccb463)
+
+* Saldo de uma conta cadastrada: __router.get('/contas/saldo')__ . Para testar, você precisará de um programa que teste as requisições. No exemplo, usaremos o Insomnia. Digite a URL http://localhost:3000/contas/saldo?numero_conta=1&senha=1234 como uma rota HTTP GET. Se a senha estiver incorreta ou a conta informada não existir, uma mensagem de erro será retornada.
+![Screenshot 2023-09-15 at 16 49 01](https://github.com/DevFelipreis/banco-digital/assets/134344282/ed88a027-d808-43db-99ba-3dff5fbafbad)
+
+* Extrato de uma conta cadastrada: __router.get('/contas/extrato')__ . Para testar, você precisará de um programa que teste as requisições. No exemplo, usaremos o Insomnia. Digite a URL http://localhost:3000/contas/extrato?numero_conta=1&senha=1234 como uma rota HTTP GET. Se a senha estiver incorreta ou a conta informada não existir, uma mensagem de erro será retornada.
+![Screenshot 2023-09-15 at 16 50 39](https://github.com/DevFelipreis/banco-digital/assets/134344282/13586135-617a-4ae8-88c4-fc3dbcf56872)
+
+* Criar uma conta bancária: __router.post('/contas/:senha_banco')__ . Para testar, você precisará de um programa que teste as requisições. No exemplo, usaremos o Insomnia. Digite a URL http://localhost:3000/contas/Cubos123Bank como uma rota HTTP GET. Se a senha estiver incorreta ou dados copo CPF e e-mail já estiverem sidos cadastrados em outra conta, uma mensagem de erro será retornada.
+![Screenshot 2023-09-15 at 16 53 38](https://github.com/DevFelipreis/banco-digital/assets/134344282/6810e8e7-a62b-430c-9e83-0cdb5ee06e4c)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
