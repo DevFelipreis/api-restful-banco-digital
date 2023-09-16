@@ -82,12 +82,16 @@ Lembre-se de que você pode instalar todas essas dependências e devDependencies
 **Links Úteis:**
 - [Baixar o Visual Studio Code (VSCode)](https://code.visualstudio.com/)
 - [Baixar o Insomnia](https://insomnia.rest/)
+- [Express.js]( https://expressjs.com/)
+- [Nodemon]( https://nodemon.io/)
+- [date-fns](https://date-fns.org/)
+- [npm](https://docs.npmjs.com/)  
 
 **Atualizações Futuras:** Este projeto encontra-se na sua versão Alfa, indicando que ainda está em desenvolvimento ativo. Estamos comprometidos em continuar aprimorando e atualizando este projeto para oferecer novos recursos e melhorias no futuro. Agradecemos antecipadamente pelo seu interesse e contribuições à medida que continuamos a evoluir este projeto.
 
 **Contato:**
 - [LinkedIn](https://www.linkedin.com/in/devlfreis/)
-- E-mail: [lfreis.contato@gmail.com](mailto:lfreis.contato@gmail.com)
+- E-mail: [lfreis.contato@gmail.com](mailto:lfreis.contato@gmail.com)  
 
 
 
