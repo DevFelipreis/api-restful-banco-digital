@@ -5,16 +5,19 @@ Este projeto é um repositório para uma API de Banco Digital. Essa API integra-
 
 Este é um projeto desenvolvido por Luiz Felipe Reis em setembro de 2023 e está em constante evolução e aprimoramento.
 
-## Pré-requisitos:
-Node.js v18.17.1. ou posteriores.
+## Tecnologias usadas:
 
-## Tecnologias e Bibliotecas:
+### JavaScript:
+Linguagem de programação de alto nível amplamente utilizada para desenvolvimento web. Ela é conhecida por ser uma linguagem de script, o que significa que você pode escrever código JavaScript diretamente em páginas da web para torná-las interativas e dinâmicas.
+
+### Node.js: 
+Ambiente de tempo de execução (runtime) de código aberto baseado na engine V8 do Google Chrome. Ele permite que os desenvolvedores utilizem JavaScript para criar aplicativos de servidor, o que é um desvio do uso tradicional do JavaScript no lado do cliente, que é executado nos navegadores.
 
 ### Dependências:
 **date-fns:** Uma biblioteca JavaScript usada para trabalhar com datas e horários. Ela fornece funções úteis para análise, manipulação e formatação de datas.
 Abra o terminal ou prompt de comando, navegue até o diretório do seu projeto e execute o seguinte comando: ```npm install date-fns```
 
-**express:** O framework web "Express.js", usado para criar aplicativos web e APIs em Node.js. É amplamente utilizado para criar servidores web e simplificar o desenvolvimento web em Node.js.
+**express.js:** O framework web "Express.js", usado para criar aplicativos web e APIs em Node.js. É amplamente utilizado para criar servidores web e simplificar o desenvolvimento web em Node.js.
 Abra o terminal ou prompt de comando, navegue até o diretório do seu projeto e execute o seguinte comando: ```npm install express```
 
 ### devDependencies:
