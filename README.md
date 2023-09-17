@@ -25,7 +25,7 @@ Abra o terminal ou prompt de comando, navegue até o diretório do seu projeto e
 As dependências são bibliotecas ou pacotes necessários para o funcionamento do seu aplicativo, enquanto as devDependencies são pacotes usados apenas durante o desenvolvimento, como no caso do nodemon, que ajuda a manter o servidor atualizado durante o desenvolvimento.
 Abra o terminal ou prompt de comando, navegue até o diretório do seu projeto e execute o seguinte comando: ```npm install -D nodemon```. Para executar o nodemon navegue até o diretório do seu projeto e execute o seguinte comando: ```nodemon meu_arquivo.js```
 
-Lembre-se de que você pode instalar todas essas dependências e devDependencies em seu projeto usando o comando: ```npm install```
+Após clonar este repositório, você pode instalar todas as dependências e devDependencies usando o comando: ```npm install```
 
 ## Preparar o projeto:
 **Clone o repositório**: Abra o terminal e use o comando: ```git clone "chave SSh"```
