@@ -115,7 +115,7 @@ Após clonar este repositório, você pode instalar todas as dependências e dev
 - [Express.js - Documentação]( https://expressjs.com/)
 - [Nodemon - Documentação]( https://nodemon.io/)
 - [date-fns - Documentação](https://date-fns.org/)
-- [npm - - Documentação](https://docs.npmjs.com/)
+- [npm - Documentação](https://docs.npmjs.com/)
 - [Baixar o Visual Studio Code (VSCode)](https://code.visualstudio.com/)
 - [Baixar o Insomnia](https://insomnia.rest/)
 
