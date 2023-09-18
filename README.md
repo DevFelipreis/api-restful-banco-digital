@@ -110,12 +110,14 @@ Após clonar este repositório, você pode instalar todas as dependências e dev
 **Agradecimentos:** Gostaríamos de expressar nossa gratidão à instituição de Ensino Cubos Academy, bem como a todos os nossos colegas e instrutores, por seu apoio e contribuições para este projeto. Seu envolvimento foi fundamental para o seu sucesso. Agradecemos sinceramente a todos vocês.
 
 **Links Úteis:**
+
+- [JavaScript - Documentação](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [Express.js - Documentação]( https://expressjs.com/)
+- [Nodemon - Documentação]( https://nodemon.io/)
+- [date-fns - Documentação](https://date-fns.org/)
+- [npm - - Documentação](https://docs.npmjs.com/)
 - [Baixar o Visual Studio Code (VSCode)](https://code.visualstudio.com/)
 - [Baixar o Insomnia](https://insomnia.rest/)
-- [Express.js]( https://expressjs.com/)
-- [Nodemon]( https://nodemon.io/)
-- [date-fns](https://date-fns.org/)
-- [npm](https://docs.npmjs.com/)  
 
 **Atualizações Futuras:** Este projeto encontra-se na sua versão Alfa, indicando que ainda está em desenvolvimento ativo. Estamos comprometidos em continuar aprimorando e atualizando este projeto para oferecer novos recursos e melhorias no futuro. Agradecemos antecipadamente pelo seu interesse e contribuições à medida que continuamos a evoluir este projeto.
 
