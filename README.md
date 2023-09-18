@@ -5,6 +5,33 @@ Este projeto é um repositório para uma API de Banco Digital. Essa API integra-
 
 Este é um projeto desenvolvido por Luiz Felipe Reis em setembro de 2023 e está em constante evolução e aprimoramento.
 
+## Funções:
+* Listar contas bancárias;
+* Criar novas contas;
+* Atualizar uma informação ou todas as informações da contas;
+* Deletar contas;
+* Realizar depósitos;
+* Realizar saques;
+* Realizar transferências;
+* Exibir saldo;
+* Exibir extrato;
+
+## Código-fonte:
+
+![Screenshot 2023-09-18 at 15 40 24](https://github.com/DevFelipreis/banco-digital/assets/134344282/849cedfb-8012-43c7-9bdc-2cdb31fe239e)
+
+```index.js```: O ponto de entrada do servidor Express.
+
+```contaBancaria.js```: Processar as solicitações do cliente, interagir com o ```bancodedados``` e retornar uma resposta adequada ao cliente.
+
+```vericarDadosIguais.js```: Processa e manipula as solicitações HTTP para verificar a igualdade dos dados.
+
+```vericarSenha.js```: Processa e manipula as solicitações HTTP para verificar a senha de administrador do banco e realizar mudanças mais significativas no banco de dados.
+
+```bancodedados.js```: Armazena os dados do banco e as funcionalidades relacionadas ao banco.
+
+```router.js```: Define as rotas da API e seus controladores.
+
 ## Tecnologias usadas:
 
 ### JavaScript:
