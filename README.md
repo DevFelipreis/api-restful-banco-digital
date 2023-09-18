@@ -8,7 +8,7 @@ Este é um projeto desenvolvido por Luiz Felipe Reis em setembro de 2023 e está
 ## Funções:
 * Listar contas bancárias;
 * Criar novas contas;
-* Atualizar uma informação ou todas as informações da contas;
+* Atualizar uma informação ou todas as informações das conta;
 * Deletar contas;
 * Realizar depósitos;
 * Realizar saques;
