@@ -1,4 +1,4 @@
-# Rest Api - Banco Digital -  v1.1.2
+# RESTful API - Banco Digital -  v1.1.2
 **Melhorias em relação à versão 1.1.1: Corrigido o 'Bug do delete' que causava um erro ao tentar excluir uma conta recém-criada.**
 
 Este projeto é um repositório para uma API de Banco Digital. Essa API integra-se com o servidor do Banco Digital para permitir o acesso e manipulação de dados bancários de forma segura e eficiente.
